@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Main Page</title>
+
+</head>
+<body>
+    <header class="header">
+     <div class="header__logo">
+        <span class="header__logo__logo">Лого</span>
+        </div>
+
+     <nav class="header__navbar">
+        <ul class="header__navlist">
+        <li class="nav-link active">О нас</li>
+        <li class="nav-link">Как это работает</li>
+        <li class="nav-link">Отзывы</li>
+        <li class="nav-link disabled">Контакты</li>
+        </ul>
+     </nav>
+     
+     <div class="header-container">
+     <div class="header__slogan"><h1>Вся жизнь - <b>путешествие!</b></h1></div>
+
+     <div class="ticket">
+        <form class="ticket-form">
+            <h2 class="ticket-form__head">Направление</h2>
+            <input class="ticket-form__input from_search" placeholder="Откуда"/>
+            <button class="reverse-points"></button>
+            <input class="ticket-form__input where_search right" placeholder="Куда">
+
+            <h2 class="ticket-form__head">Дата</h2>
+            <input type="date" class="ticket-form__input departure-date" placeholder="ДД/ММ/ГГ">
+            <input type="date" class="ticket-form__input departure-date-back right" placeholder="ДД/ММ/ГГ">
+            <button class="find-tickets right">Найти билеты</button>
+        </form>
+     </div>
+     </div>
+
+    </header>
+
+    <main class="main">
+       <section class="about-us">
+        <h1 class="about-us__title">О нас</h1>
+        <div class="about-us__block">
+        <div class="line-vertical"></div>
+        <div class="about-us__content">
+            <p> Мы рады видеть вас! Мы рботаем для Вас с 2003 года. 14 лет мы наблюдаем, как с каждым днем все больше
+              людей заказывают жд билеты через интернет.</p>
+              <p>Сегодня можно заказать железнодорожные билеты онлайн всего в 2 клика, но стоит ли это делать?<br>
+              Мы расскажем о преимуществах заказа через интернет.</p>
+            <p><strong>Покупать жд билеты дешево можно за 90 суток до отправления поезда.<br>
+                Благодаря динамическому ценообразованию цена на билеты в это время самая низкая.</strong></p>
+        </div>
+        </div>
+       </section>
+
+       <section class="how-its-work">
+        <div class="container">
+        <div class="how-its-work__part1">
+           <a href="#" class="how-its-work__link">Как это работает</a>
+           <button class="how-its-work__know-more">УЗНАТЬ БОЛЬШЕ</button>
+        </div>
+        <div class="how-its-work__part2">
+            <div class="how-its-work__options">
+                <div class="how-its-work__option1">
+                    <img src="./img/howItsW-img1.png" alt="Удобный заказ на сайте">
+                </div>
+                <h3 class="how-its-work__option-description">Удобный заказ на сайте</h3>
+            </div>
+            <div class="how-its-work__options">
+                <div class="how-its-work__option2">
+                    <img src="./img/howItsW-img1.png" alt="Нет необходимости ехать в офис">
+                </div>
+                <h3 class="how-its-work__option-description">Нет необходимости ехать в офис</h3>
+            </div>
+            <div class="how-its-work__options">
+                <div class="how-its-work__option3">
+                    <img src="./img/howItsW-img1.png" alt="Огромный выбор направлений">
+                </div>
+                <h3 class="how-its-work__option-description">Огромный выбор направлений</h3>
+            </div>
+        </div>
+        </div>
+       </section>
+
+       <section class="feedbacks">
+
+       </section>
+    </main>
+    <footer class="footer">
+     <div class="footer-main">
+        <div class="footer-main__contacts">
+            <span class="footer-main_head">Свяжитесь с нами</span>
+            <div class="footer-main__contacts__item"></div>
+            <div class="footer-main__contacts__item"></div>
+            <div class="footer-main__contacts__item"></div>
+            <div class="footer-main__contacts__item"></div>
+        </div>
+        <div class="footer-main__subscribe">
+            <span class="footer-main__subscribe__head"></span>
+            <div class="footer-main__subscribe__label"></div>
+            <form action="footer-main__subscribe__form"></form>
+            <button class="footer-main__subscribe__send"></button>
+            <span class="footer-main__subscribe__social-media"></span>
+            <div class="footer-main__subscribe__social-media-list"></div>
+        </div>
+     </div>
+
+     <div class="footer-logo">
+        <div class="logo"></div>
+        <div class="logo-up"></div>
+        <div class="copyright"></div>
+     </div>
+    </footer>
+</body>
+</html>
