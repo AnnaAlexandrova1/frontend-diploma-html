@@ -75,51 +75,141 @@
                 <div class="how-its-work__option1">
                     <img src="./img/howItsW-img1.png" alt="Удобный заказ на сайте">
                 </div>
-                <h3 class="how-its-work__option-description">Удобный заказ на сайте</h3>
+                <span class="how-its-work__option-description">Удобный заказ на сайте</span>
             </div>
             <div class="how-its-work__options">
                 <div class="how-its-work__option2">
                     <img src="./img/howItsW-img1.png" alt="Нет необходимости ехать в офис">
                 </div>
-                <h3 class="how-its-work__option-description">Нет необходимости ехать в офис</h3>
+                <span class="how-its-work__option-description">Нет необходимости ехать в офис</span>
             </div>
             <div class="how-its-work__options">
                 <div class="how-its-work__option3">
                     <img src="./img/howItsW-img1.png" alt="Огромный выбор направлений">
                 </div>
-                <h3 class="how-its-work__option-description">Огромный выбор направлений</h3>
+                <span class="how-its-work__option-description">Огромный выбор направлений</span>
             </div>
         </div>
         </div>
        </section>
 
        <section class="feedbacks">
+        <div class="container">
+        <div class="feedbacks-title">
+            <h2 class="feedbacks-title-h2">ОТЗЫВЫ</h2>
+        </div>
 
+        <div class="feedbacks-items">
+            <div class="feedbacks-items__item">
+                <div class="feedbacks-items__item__img">
+                    <img src="./img/feedback-IMG-1.png" alt="athor photo">
+                </div>
+                <div class="feedbacks-items__item__text">
+                    <h3 class="feedbacks-items__item__text__title">Екатерина Вальнова</h3>
+                    <p class="feedbacks-items__item__text-p">
+                        Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые.
+                    </p>
+                </div>
+            </div>
+            <div class="feedbacks-items__item">
+                <div class="feedbacks-items__item__img">
+                    <img src="./img/feedback-IMG-2.png" alt="athor photo">
+                </div>
+                <div class="feedbacks-items__item__text">
+                    <h3 class="feedbacks-items__item__text__title">Евгений Стрыкало</h3>
+                    <p class="feedbacks-items__item__text-p"> СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа до отправления мы пришлем вам СМС-напоминание о поездке.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+		<input type="radio" name="slider__check" class="slider__check" id="slider__check-1" checked>
+        <label for="slider__check-1" class="slider__label">1</label>
+
+        <input type="radio" name="slider__check" class="slider__check" id="slider__check-2">
+        <label for="slider__check-2" class="slider__label">2</label>
+
+        <input type="radio" name="slider__check" class="slider__check" id="slider__check-2">
+        <label for="slider__check-2" class="slider__label">3</label>
+
+        <input type="radio" name="slider__check" class="slider__check" id="slider__check-2">
+        <label for="slider__check-2" class="slider__label">4</label>
+
+        
+        <input type="radio" name="slider__check" class="slider__check" id="slider__check-2">
+        <label for="slider__check-2" class="slider__label">5</label>
+	       </div>
+        </div>
        </section>
+
     </main>
     <footer class="footer">
      <div class="footer-main">
         <div class="footer-main__contacts">
-            <span class="footer-main_head">Свяжитесь с нами</span>
-            <div class="footer-main__contacts__item"></div>
-            <div class="footer-main__contacts__item"></div>
-            <div class="footer-main__contacts__item"></div>
-            <div class="footer-main__contacts__item"></div>
+            <h3 class="footer-main_head">Свяжитесь с нами</h3>
+            <ul class="footer-main__contacts__items">
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-cell.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">8 (800) 000 00 00</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-mail.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">inbox@mail.ru</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-skype.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">tu.train.tickets</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-geo.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">г. Москва ул. Московская 27-35 555 555</span>
+                </li>
+            </ul>
         </div>
         <div class="footer-main__subscribe">
-            <span class="footer-main__subscribe__head"></span>
-            <div class="footer-main__subscribe__label"></div>
-            <form action="footer-main__subscribe__form"></form>
-            <button class="footer-main__subscribe__send"></button>
-            <span class="footer-main__subscribe__social-media"></span>
-            <div class="footer-main__subscribe__social-media-list"></div>
+            <h3 class="footer-main_head">Подписка</h3>
+            <div class="footer-main__subscribe__item">
+            <label class="footer-main__subscribe__item__label" for="subscribe__form">Будьте в курсе событий</label>
+            <form action="footer-main__subscribe__form" id="subscribe__form" method="post">
+            <div class="footer-main__subscribe__form-group">
+                <input type="email" class="footer-main__subscribe__form-input" placeholder="e-mail">
+                </div>
+                <div class="footer-main__subscribe__form-group">
+            <button class="footer-main__subscribe__send">ОТПРАВИТЬ</button>
+            </div>
+            </form>
+            </div>
+            <div class="footer-main__subscribe__item">
+            <span class="footer-main__subscribe__social-media">Подписывайтесь на нас</span>
+            <div class="footer-main__subscribe__social-media-list">
+                <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-youtube.svg" alt="youtube-icon">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-facebook.svg" alt="facebook-icon">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-twitter.svg" alt="twitter-icon">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-linkedin.svg" alt="linkedin-icon">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-google.svg" alt="google-icon">
+                    </li>
+                </ul>
+            </div>
+            </div>
         </div>
      </div>
 
-     <div class="footer-logo">
-        <div class="logo"></div>
-        <div class="logo-up"></div>
-        <div class="copyright"></div>
+     <div class="footer-main__line"></div>
+
+     <div class="footer-logo container">
+        <div class="footer__logo__logo">Лого</div>
+        <div class="logo-up"><img src="./img/icons/footer-ellipse.svg" alt="button-UP"></div>
+        <div class="copyright">2018 WEB</div>
      </div>
     </footer>
 </body>
