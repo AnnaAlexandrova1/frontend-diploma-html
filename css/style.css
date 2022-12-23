@@ -27,7 +27,6 @@ body {
 
 .header__logo__logo{
     margin-top: 15px;
-    margin-left: 258px;
     font-weight: 900;
     font-size: 36px;
 }
@@ -39,7 +38,6 @@ body {
 }
 
 .header__navlist{
-    margin-left: 258px;
     list-style: none;
     vertical-align: middle;
     padding-left: 0;
@@ -59,7 +57,7 @@ body {
 .header__slogan{
     width: 506px;
     margin-top: 415px;
-    margin-left: 348px;
+    margin-left: 50px;
 }
 
 .header__slogan h1{
@@ -128,13 +126,15 @@ body {
     background-color: #FFA800;
 }
 
+/*  about-us */
+
 .about-us{
     color: black;
 }
 
 .about-us__title{
     margin-top: 144px;
-    margin-left: 258px;
+    /*margin-left: 258px;*/
 
     font-weight: 500;
     font-size: 36px;
@@ -142,7 +142,7 @@ body {
 
 .about-us__block {
     margin-top: 30px;
-    margin-left: 258px;
+    /*margin-left: 258px;*/
     display: flex;
     flex-direction: row;
 }
@@ -161,7 +161,7 @@ body {
     font-weight: 400;
 }
 
-.about-us__content p{
+.about-us__content p:not(first-child){
     margin-top: 1em;
 }
 
