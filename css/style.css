@@ -320,17 +320,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
-	  border-radius: 50%;
-	  width: 135px;
-	  height: 135px;
-      background-color: #E5E5E5;
-      border: 6px solid rgba(255, 255, 255, 0.6);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
 .how-its-work__option1 img, .how-its-work__option2 img, .how-its-work__option3 img{
-    width: 33px;
-    height: 33px;
+    width: 162px;
+    height: 162px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -437,7 +432,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .footer-main {
     width: 1240px;
-    border: 2px solid red;
     margin-left:auto;
     margin-right:auto;
     padding-top: 50px;
@@ -451,6 +445,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .footer-main_head {
+    margin-bottom: 17px;
     font-size: 30px;
     line-height: 35px;
     font-weight: 500;
@@ -464,7 +459,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .footer-main__contacts__items {
-    margin-top: 30px;
     padding-inline-start: 0px;
     list-style: none;
 }
@@ -497,27 +491,46 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 650px;
 }
 
-.footer-main__subscribe__form{
+.footer-main__subscribe__form {
     display: flex;
     flex-direction: row;
-   justify-content: center
+    justify-content: center;
+    box-sizing: border-box;
 }
 
-.footer-main__subscribe__form-input {
-    min-width: 300px;
-    height: 60px;
-    padding-left: 10px;
-    border: 1px;
-    border-radius: 3px;
+.input-btn-wrapper{
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    vertical-align: baseline;
     
 }
 
-.footer-main__subscribe__send {
-    width: 170px;
+.footer-main__subscribe__form-input {
     height: 60px;
-    border: 1px solid #E5E5E5;
+    min-width: 300px;
+    max-width: 447px;
+    width: 100%;
+    padding-left: 21px;
+    margin-right: 33px;
+    outline: none;
+    border: none;
     border-radius: 3px;
+    margin: 0;
+    overflow: visible;
+}
+
+.footer-main__subscribe__send {
+    height: 60px;
+    min-width: 200px;
+    margin-left: 10px;
     background-color: transparent;
+    border: 1px solid #E5E5E5;;
+    color: var(--color-text-contrast);
+    padding: 17px 11px 17px 19px;
+    cursor: pointer;
+    border-radius: 3px;
 
     font-size: 24px;
     line-height: 25px;
@@ -526,10 +539,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-family: Roboto, sans-serif;
 }
 
-.footer-main__subscribe__item__label{
-    margin-top: 30px;
-    margin-bottom: 17px;
-}
 .footer-main__subscribe__social-media {
     margin-top: 45px;
     margin-bottom: 24px;
