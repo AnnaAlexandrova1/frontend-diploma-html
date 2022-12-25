@@ -75,16 +75,21 @@
 
 .breadcrumbs {
   height: 98px;
+  background-color: #3e3c41;
+  width: 100%;
 }
 
 .breadcrumbs-list {
   display: flex;
   flex-direction: row;
   list-style: none;
+  width: 100%;
   margin: 0;
   padding: 0;
   background: #fff;
 }
+
+
 
 .breadcrumb a {
   display: block;
@@ -102,6 +107,8 @@
   margin-right: 50px;
   width: 330px;
 }
+
+
 
 .breadcrumb .icon {
   border: 2px solid white;
@@ -121,7 +128,7 @@
 }
 
 .breadcrumbs-list li:first-child a {
-  width: 554px;
+   width: 554px;
 }
 
 .breadcrumbs-list li:first-child a:before {
@@ -129,7 +136,7 @@
 }
 
 .breadcrumbs-list li:last-child a {
-  width: 505px;
+  width: 554px;
   margin-right: 0;
   text-align: left;
   padding-left: 50px;
@@ -184,11 +191,14 @@
 
 .main-container {
   display: flex;
-  background-color: #e5e5e5;
+  width: 1410px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sidebar-content {
-  padding: 100px 0 0 215px;
+    width: 30%;
+  padding: 100px 0 0 0px;
   margin-bottom: 150px;
 }
 
@@ -670,8 +680,8 @@ input:checked + .slider:before {
 }
 
 .trains {
-  width: 960px;
-  padding: 100px 0 0 85px;
+  width: 67%;
+  padding: 100px 0 0 0px;
 }
 
 .trains_head {
