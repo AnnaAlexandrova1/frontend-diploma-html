@@ -687,6 +687,7 @@ input:checked + .slider:before {
 .trains_head {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .trains_head p {
