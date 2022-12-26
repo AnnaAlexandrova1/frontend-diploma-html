@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orderEnd.css">
+    <title>Main Page</title>
+
+</head>
+<body>
+    <header class="header">
+     <div class="header__logo container">
+        <span class="header__logo__logo"><a href="./trainSelect.html">Лого</a>
+            </span>
+        </div>
+
+     <nav class="header__navbar">
+        <div class="container">
+        <ul class="header__navlist">
+        <li class="nav-link active">О нас</li>
+        <li class="nav-link">Как это работает</li>
+        <li class="nav-link">Отзывы</li>
+        <li class="nav-link"><a href="./confirmOrder.html">ConfirmOrder</a></li>
+        <li class="nav-link disabled">Контакты</li>
+        </ul>
+        </div>
+     </nav>
+    </header>
+
+     <main class="order-end_main-container">
+        <section class="order-end_content-wrap">
+          <h1>Благодарим Вас за заказ!</h1>
+          <div class="order-end_content">
+            <div class="order-end_title">
+              <span class="order-end_order-number">№ Заказа: 285АА</span>
+              <div class="order-end_total-price-wrap">
+                <span class="order-end_total-price">сумма</span>
+                <span class="order-end_total-price-sum">7760</span>
+                <span class="rub-vector"></span>
+              </div>
+            </div>
+            <div class="order-end_faq">
+              <div class="faq-vector-container">
+                <span class="faq-vector first"></span>
+                <h3>Билеты будут отправлены на ваш e-mail</h3>
+              </div>
+              <div class="faq-vector-container">
+                <span class="faq-vector second"></span>
+                <h3>Распечатайте и сохраняйте билеты до даты поездки</h3>
+              </div>
+              <div class="faq-vector-container">
+                <span class="faq-vector last"></span>
+                <h3>Предьявите распечатанные билеты при посадке</h3>
+              </div>
+            </div>
+            <div class="order-end_message">
+              <span class="message-client_name">Ирина Эдуардовна!</span>
+
+              <span class="message-main_text"
+                >Ваш заказ успешно оформлен.<br />
+                В ближайшее время с вами свяжется наш оператор для
+                подтверждения.</span
+              >
+              <span class="message-end_of_message"
+                >Благодарим Вас за оказанное доверие и желаем приятного
+                путешествия!</span
+              >
+            </div>
+            <div class="order-end_assessment">
+              <div class="assessment_list-wrap">
+                <span class="assessment_title">Оценить сервис</span>
+                <ul class="assessment_list">
+                  <li class="star-vector"></li>
+                  <li class="star-vector"></li>
+                  <li class="star-vector"></li>
+                  <li class="star-vector"></li>
+                  <li class="star-vector"></li>
+                </ul>
+              </div>
+              <button class="back-to-main">Вернуться на главную</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+ 
+    <footer class="footer">
+     <div class="footer-main">
+        <div class="footer-main__contacts">
+            <h3 class="footer-main_head">Свяжитесь с нами</h3>
+            <ul class="footer-main__contacts__items">
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-cell.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">8 (800) 000 00 00</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-mail.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">inbox@mail.ru</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-skype.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">tu.train.tickets</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-geo.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">г. Москва ул. Московская 27-35 555 555</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-main__subscribe">
+            <h3 class="footer-main_head">Подписка</h3>
+            <div class="footer-main__subscribe__item">
+            <form action="footer-main__subscribe__form" id="subscribe__form" method="post">
+                <label class="footer-main__subscribe__item__label" for="subscribe__form">Будьте в курсе событий</label>
+                <div class="input-btn-wrapper">
+                <input type="email" class="footer-main__subscribe__form-input" placeholder="e-mail">
+               <button class="footer-main__subscribe__send btn-footer">ОТПРАВИТЬ</button>
+               </div>
+            </form>
+            </div>
+            <div class="footer-main__subscribe__item">
+            <span class="footer-main__subscribe__social-media">Подписывайтесь на нас</span>
+            <div class="footer-main__subscribe__social-media-list">
+                <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-youtube.svg" alt="youtube-icon" class="symbol-active">                    
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-facebook.svg" alt="facebook-icon" class="symbol-active">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-twitter.svg" alt="twitter-icon" class="symbol-active">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-linkedin.svg" alt="linkedin-icon" class="symbol-active">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-google.svg" alt="google-icon" class="symbol-active">
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="footer-main__line"></div>
+
+     <div class="footer-logo container">
+        <div class="footer__logo__logo">Лого</div>
+        <div class="logo-up"><img src="./img/icons/footer-ellipse.svg" alt="button-UP" class="symbol-active"></div>
+        <div class="copyright">2018 WEB</div>
+     </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/trainSelect.css">
+    <link rel="stylesheet" href="css/seatsSelect.css">
+    <link rel="stylesheet" href="css/confirmOrder.css">
+    <title>Main Page</title>
+
+</head>
+<body>
+    <header class="header-trainselect">
+     <div class="header__logo container">
+        <span class="header__logo__logo">Лого
+            </span>
+        </div>
+
+     <nav class="header__navbar">
+        <div class="container">
+        <ul class="header__navlist">
+        <li class="nav-link active">
+          О нас
+          </li>
+        <li class="nav-link">Как это работает</li>
+        <li class="nav-link">Отзывы</li>
+        <li class="nav-link disabled">Контакты</li>
+        </ul>
+        </div>
+     </nav>
+
+     <div class="trainSelect_header-content">
+         <div class="trainSelect_header-content_search-form-container">
+          <form class="trainSelect_header-content_search-form">
+
+            <div class="trainSelect__header-form__direction">
+                <h2 class="ticket-form__head">Направление</h2>
+                <div class="trainSelect__header-form__items">
+                    <div class="train-select__header-form__item">
+                        <input type="text" class="ticket-form__input from_search" placeholder="Откуда"/>
+                        <img class="header-form__icon" src="./img/icons/from-to-geo.svg" alt="geolocation">
+                    </div>
+                    <div class="rotate"><img src="./img/icons/rotate.svg" alt="rotate"></div>
+                    <div class="train-select__header-form__item">
+                        <input class="ticket-form__input where_search right" placeholder="Куда">
+                        <img class="header-form__icon" src="./img/icons/from-to-geo.svg" alt="geolocation">
+                    </div>  
+                </div>
+            </div>
+
+             <div class="trainSelect__header-form__date">
+                <h2 class="ticket-form__head">Дата</h2>
+                <div class="header-form__items">
+                    <div class="train-select__header-form__item">
+                        <div class="datepicker">
+                            <input type="date" class="ticket-form__input departure-date" placeholder="ДД/ММ/ГГ">
+                            <div class="datepicker__wrapper" style="z-index: 9999; position: absolute; display: none;"></div>
+                        </div>
+                        <img class="header-form__icon" src="./img/icons/calendar.svg" alt="calendar">
+                    </div>
+                    <div class="rotate"></div>
+                    <div class="train-select__header-form__item">
+                        <div class="datepicker">
+                            <input type="date" class="ticket-form__input departure-date-back right" placeholder="ДД/ММ/ГГ">
+                            <div class="datepicker__wrapper" style="z-index: 9999; position: absolute; display: none;"></div>
+                        </div>
+                        <img class="header-form__icon" src="./img/icons/calendar.svg" alt="calendar">
+                    </div>
+                </div>
+            </div>
+
+             <div class="header-form__submit">
+                <div class="train-select__header-form__item">
+                    <button class="find-tickets right">Найти билеты</button>
+                </div>
+            </div>
+
+          </form>  
+
+        </div>
+      </div>
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumb breadcrumb-active"><a href="#"><span class="icon">1</span><span>Билеты</span></a></li>
+          <li class="breadcrumb"><a href="#"><span class="icon">2</span><span>Пассажиры</span></a></li>
+          <li class="breadcrumb"><a href="#"><span class="icon">3</span><span>Оплата</span></a></li>
+          <li class="breadcrumb"><a href="#"><span class="icon">4</span><span>Проверка</span></a></li>
+        </ul>
+      </div>
+
+     </header>
+
+
+    <main class="main-container">
+        <section class="sidebar-content">
+          <section class="travel-details">
+            <h2 class="travel-details-title">Детали поездки</h2>
+            <div class="travel-details-departure">
+              <div class="travel-details_title-container">
+                <h2 class="travel-details-main_title">
+                  <span class="departure-vector"></span>Туда<span
+                    class="travel-details-date"
+                    >30.08.2018</span
+                  >
+                </h2>
+                <span class="closeUP-vector"></span>
+              </div>
+              <p class="sidebar-train-number">
+                <span class="sidebar-train-number-title">№ Поезда</span>116C
+              </p>
+              <div class="sidebar-train-name">
+                <span class="sidebar-train-name-title">Название</span>
+                <ul class="sidebar-train-name-list">
+                  <li>Адлер</li>
+                  <li>Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="sidebar-train-shipment-scheme">
+                <div class="sidebar-train-time-wrap">
+                  <div class="sidebar-train-shipment-scheme_departure-date">
+                    <span class="sidebar-train-departure-time">0:10</span>
+                    <span class="travel-details_departure-day">30.08.2018</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+                  <div class="sidebar-train-shipment-scheme_arrival-date">
+                    <span class="sidebar-train-departure-time">9:52</span>
+                    <span class="travel-details_arrival-day">31.08.2018</span>
+                  </div>
+                </div>
+                <div class="sidebar-train-departure-wrap">
+                  <div class="sidebar-departure-point-wrap">
+                    <span class="sidebar-train-departure-point">Москва</span>
+                    <span class="sidebar-train-departure-station"
+                      >Курский вокзал</span
+                    >
+                  </div>
+                  <div class="arrival-point-wrap">
+                    <span class="sidebar-train-departure-point"
+                      >Санкт-Петербург</span
+                    >
+                    <span class="sidebar-train-departure-station"
+                      >Ладожский вокзал</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="travel-details-departure_back">
+              <div class="travel-details_title-container">
+                <h2 class="travel-details-main_title">
+                  <span class="departure-vector"></span>Обратно<span
+                    class="travel-details-date"
+                    >09.09.2018</span
+                  >
+                </h2>
+                <span class="closeUP-vector"></span>
+              </div>
+              <p class="sidebar-train-number">
+                <span class="sidebar-train-number-title">№ Поезда</span>116C
+              </p>
+              <div class="sidebar-train-name">
+                <span class="sidebar-train-name-title">Название</span>
+                <ul class="sidebar-train-name-list">
+                  <li>Адлер</li>
+                  <li>Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="sidebar-train-shipment-scheme">
+                <div class="sidebar-train-time-wrap">
+                  <div class="sidebar-train-shipment-scheme_departure-date">
+                    <span class="sidebar-train-departure-time">0:10</span>
+                    <span class="travel-details_departure-day">09.09.2018</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+                  <div class="sidebar-train-shipment-scheme_arrival-date">
+                    <span class="sidebar-train-departure-time">9:52</span>
+                    <span class="travel-details_arrival-day">08.09.2018</span>
+                  </div>
+                </div>
+                <div class="sidebar-train-departure-wrap">
+                  <div class="departure-point-wrap">
+                    <span class="sidebar-train-departure-point">Москва</span>
+                    <span class="sidebar-train-departure-station"
+                      >Курский вокзал</span
+                    >
+                  </div>
+                  <div class="arrival-point-wrap">
+                    <span class="sidebar-train-departure-point"
+                      >Санкт-Петербург</span
+                    >
+                    <span class="sidebar-train-departure-station"
+                      >Ладожский вокзал</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="passengers-count-container">
+              <div class="travel-details_title-container">
+                <h2 class="travel-details-main_title">
+                  <span class="passenger-vector"></span>Пассажиры
+                </h2>
+                <span class="closeUP-vector"></span>
+              </div>
+              <div class="count-list-wrap">
+                <div class="passengers-count-total">
+                  <p>2 Взрослых</p>
+                  <p>1 Ребенок</p>
+                </div>
+                <div class="passengers-price-total">
+                  <p>5840<span class="rub-vector-small"></span></p>
+                  <p>1920<span class="rub-vector-small"></span></p>
+                </div>
+              </div>
+              <div class="total">
+                <p>Итог</p>
+                <span class="total-price"
+                  >7760<span class="rub-vector"></span
+                ></span>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="confim-order_main-container">
+          <div class="train-wrap">
+            <h1>Поезд</h1>
+            <li class="train">
+              <div class="train-description-wrap">
+                <div class="train-description">
+                  <span class="train-vector"></span>
+                  <p class="train-number">116С</p>
+                  <ul class="train-route">
+                    <li>Адлер<span class="arrow-vector"></span></li>
+                    <li>Москва<span class="arrow-vector"></span></li>
+                    <li>Санкт-Петербург</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="train-travel_time-scheme-wrap">
+                <div class="train-shipment-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector"></span>
+                  </div>
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station"
+                      >Ладожский вокзал</span
+                    >
+                  </div>
+                </div>
+                <div class="train-shipment-reverse-scheme">
+                  <div class="train-departure-time-wrap">
+                    <span class="train-departure-time">0:10</span>
+                    <span class="train-departure-point">Москва</span>
+                    <span class="train-departure-station">Курский вокзал</span>
+                  </div>
+                  <div class="travel-time-wrap">
+                    <span class="travel-time">9:42</span>
+                    <span class="travel-time-vector-reverse"></span>
+                  </div>
+                  <div class="train-arrival-time">
+                    <span class="train-departure-time">9:52</span>
+                    <span class="train-departure-point">Санкт-Петербург</span>
+                    <span class="train-departure-station"
+                      >Ладожский вокзал</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="train-place-prices">
+                <ul>
+                  <li>
+                    <span class="type">Сидячий</span
+                    ><span class="seats">88</span>oт
+                    <span class="place-ticket-price"
+                      >1920<span class="rub-vector-small"></span
+                    ></span>
+                  </li>
+                  <li>
+                    <span class="type">Плацкарт</span>
+                    <span class="seats">52</span>oт
+                    <span class="place-ticket-price"
+                      >2530<span class="rub-vector-small"></span
+                    ></span>
+                  </li>
+                  <li>
+                    <span class="type">Купе</span>
+                    <span class="seats">24</span>oт
+                    <span class="place-ticket-price"
+                      >3820<span class="rub-vector-small"></span
+                    ></span>
+                  </li>
+                  <li>
+                    <span class="type">Люкс</span
+                    ><span class="seats">15</span>oт
+                    <span class="place-ticket-price"
+                      >4950<span class="rub-vector-small"></span
+                    ></span>
+                  </li>
+                </ul>
+                <div class="train-comfort-available-props">
+                  <span class="comfort-props_vector"></span>
+                </div>
+                <button class="select-seats">Изменить</button>
+              </div>
+            </li>
+          </div>
+          <div class="passenger-data-wrap">
+            <h1>Пассажиры</h1>
+            <div class="data-wrap-main_container">
+              <div class="data-wrap-container">
+                <ul>
+                  <li>
+                    <div class="passenger-type-wrap">
+                      <span class="passenger-vector-big"></span>
+                      <span class="passenger-type">Взрослый</span>
+                    </div>
+                    <div class="passenger-description">
+                      <p><span>Мартынюк Ирина Эдуардовна</span></p>
+                      <p>Пол: женский</p>
+                      <p>Дата рождения: 17.02.1985</p>
+                      <p>Паспорт РФ 4204 380694</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="passenger-type-wrap">
+                      <span class="passenger-vector-big"></span>
+                      <span class="passenger-type">Детский</span>
+                    </div>
+                    <div class="passenger-description">
+                      <p><span>Мартынюк Кирилл Сергеевич</span></p>
+                      <p>Пол: мужской</p>
+                      <p>Дата рождения: 25.01.2006</p>
+                      <p>Свидетельство о рождении VIII УН 256319</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="passenger-type-wrap">
+                      <span class="passenger-vector-big"></span>
+                      <span class="passenger-type">Взрослый</span>
+                    </div>
+                    <div class="passenger-description">
+                      <p><span>Мартынюк Сергей Петрович</span></p>
+                      <p>Пол: мужской</p>
+                      <p>Дата рождения: 19.06.1982</p>
+                      <p>Паспорт РФ 4204 380694</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="data-wrap-container">
+                <div class="confim-order-total">
+                  <span class="confim-order-total-price">Всего</span>
+                  <span class="confim-order-total-price-sum">7760</span>
+                  <span class="rub-vector"></span>
+                </div>
+                <button class="config-ticket">Изменить</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pay-type-wrap">
+            <h1>Способ оплаты</h1>
+            <div class="pay-type-settings">
+              <span>Наличными</span>
+              <button class="config-pay-type">Изменить</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+    <footer class="footer">
+     <div class="footer-main">
+        <div class="footer-main__contacts">
+            <h3 class="footer-main_head">Свяжитесь с нами</h3>
+            <ul class="footer-main__contacts__items">
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-cell.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">8 (800) 000 00 00</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-mail.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">inbox@mail.ru</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-skype.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">tu.train.tickets</span>
+                </li>
+                <li class="footer-main__contacts__item">
+                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-geo.svg" alt="">
+                    <span class="footer-main__contacts__item__desc">г. Москва ул. Московская 27-35 555 555</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-main__subscribe">
+            <h3 class="footer-main_head">Подписка</h3>
+            <div class="footer-main__subscribe__item">
+            <form action="footer-main__subscribe__form" id="subscribe__form" method="post">
+                <label class="footer-main__subscribe__item__label" for="subscribe__form">Будьте в курсе событий</label>
+                <div class="input-btn-wrapper">
+                <input type="email" class="footer-main__subscribe__form-input" placeholder="e-mail">
+               <button class="footer-main__subscribe__send btn-footer">ОТПРАВИТЬ</button>
+               </div>
+            </form>
+            </div>
+            <div class="footer-main__subscribe__item">
+            <span class="footer-main__subscribe__social-media">Подписывайтесь на нас</span>
+            <div class="footer-main__subscribe__social-media-list">
+                <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-youtube.svg" alt="youtube-icon" class="symbol-active">                    
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-facebook.svg" alt="facebook-icon" class="symbol-active">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-twitter.svg" alt="twitter-icon" class="symbol-active">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-linkedin.svg" alt="linkedin-icon" class="symbol-active">
+                    </li>
+                    <li class="social-media-list__item">
+                        <img src="./img/icons/footer-google.svg" alt="google-icon" class="symbol-active">
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="footer-main__line"></div>
+
+     <div class="footer-logo container">
+        <div class="footer__logo__logo">Лого</div>
+        <div class="logo-up"><img src="./img/icons/footer-ellipse.svg" alt="button-UP" class="symbol-active"></div>
+        <div class="copyright">2018 WEB</div>
+     </div>
+    </footer>
+</body>
+</html>
