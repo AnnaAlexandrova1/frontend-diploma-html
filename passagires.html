@@ -1,141 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/passagires.css">
-     <link rel="stylesheet" href="css/trainSelect.css">
-    <title>Train Select</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/passagires.css">
+  <link rel="stylesheet" href="css/trainSelect.css">
+  <title>Train Select</title>
 </head>
+
 <body>
-    <header class="header-trainselect">
-     <div class="header__logo container">
-        <span class="header__logo__logo"><a href="./trainSelect.html">Лого</a>
-            </span>
-        </div>
+  <header class="header-trainselect">
+    <div class="header-trainselect-image">
+      <div class="header__logo container">
+        <span class="header__logo__logo">Лого</span>
+      </div>
 
-     <nav class="header__navbar">
+      <nav class="header__navbar">
         <div class="container">
-        <ul class="header__navlist">
-        <li class="nav-link active">
-          <a href="./seatsSelect.html">О нас</a>
-          </li>
-        <li class="nav-link">Как это работает</li>
-        <li class="nav-link">Отзывы</li>
-        <li class="nav-link disabled">Контакты</li>
-        </ul>
+          <ul class="header__navlist">
+            <li class="nav-link active">О нас</li>
+            <li class="nav-link">Как это работает</li>
+            <li class="nav-link">Отзывы</li>
+            <li class="nav-link disabled">Контакты</li>
+          </ul>
         </div>
-     </nav>
+      </nav>
 
-     <div class="trainSelect_header-content">
-         <div class="trainSelect_header-content_search-form-container">
+      <div class="trainSelect_header-content">
+        <div class="trainSelect_header-content_search-form-container">
           <form class="trainSelect_header-content_search-form">
-
             <div class="trainSelect__header-form__direction">
-                <h2 class="ticket-form__head">Направление</h2>
-                <div class="trainSelect__header-form__items">
-                    <div class="train-select__header-form__item">
-                        <input type="text" class="ticket-form__input from_search" placeholder="Откуда"/>
-                        <img class="header-form__icon" src="./img/icons/from-to-geo.svg" alt="geolocation">
-                    </div>
-                    <div class="rotate"><img src="./img/icons/rotate.svg" alt="rotate"></div>
-                    <div class="train-select__header-form__item">
-                        <input class="ticket-form__input where_search right" placeholder="Куда">
-                        <img class="header-form__icon" src="./img/icons/from-to-geo.svg" alt="geolocation">
-                    </div>  
-                </div>
-            </div>
-
-             <div class="trainSelect__header-form__date">
-                <h2 class="ticket-form__head">Дата</h2>
-                <div class="header-form__items">
-                    <div class="train-select__header-form__item">
-                        <div class="datepicker">
-                            <input type="date" class="ticket-form__input departure-date" placeholder="ДД/ММ/ГГ">
-                            <div class="datepicker__wrapper" style="z-index: 9999; position: absolute; display: none;"></div>
-                        </div>
-                        <img class="header-form__icon" src="./img/icons/calendar.svg" alt="calendar">
-                    </div>
-                    <div class="rotate"></div>
-                    <div class="train-select__header-form__item">
-                        <div class="datepicker">
-                            <input type="date" class="ticket-form__input departure-date-back right" placeholder="ДД/ММ/ГГ">
-                            <div class="datepicker__wrapper" style="z-index: 9999; position: absolute; display: none;"></div>
-                        </div>
-                        <img class="header-form__icon" src="./img/icons/calendar.svg" alt="calendar">
-                    </div>
-                </div>
-            </div>
-
-             <div class="header-form__submit">
+              <h2 class="ticket-form__head">Направление</h2>
+              <div class="trainSelect__header-form__items">
                 <div class="train-select__header-form__item">
-                    <button class="find-tickets right">Найти билеты</button>
+                  <input type="text" class="ticket-form__input from_search" placeholder="Откуда" />
+                  <img class="header-form__icon" src="./img/icons/from-to-geo.svg" alt="geolocation">
                 </div>
+                <div class="rotate"><img src="./img/icons/rotate.svg" alt="rotate"></div>
+                <div class="train-select__header-form__item">
+                  <input class="ticket-form__input where_search right" placeholder="Куда">
+                  <img class="header-form__icon" src="./img/icons/from-to-geo.svg" alt="geolocation">
+                </div>
+              </div>
             </div>
-
-          </form>  
-
+            <div class="trainSelect__header-form__date">
+              <h2 class="ticket-form__head">Дата</h2>
+              <div class="header-form__items">
+                <div class="train-select__header-form__item">
+                  <div class="datepicker">
+                    <input type="date" class="ticket-form__input departure-date" placeholder="ДД/ММ/ГГ">
+                    <div class="datepicker__wrapper" style="z-index: 9999; position: absolute; display: none;"></div>
+                  </div>
+                  <img class="header-form__icon" src="./img/icons/calendar.svg" alt="calendar">
+                </div>
+                <div class="rotate"></div>
+                <div class="train-select__header-form__item">
+                  <div class="datepicker">
+                    <input type="date" class="ticket-form__input departure-date-back right" placeholder="ДД/ММ/ГГ">
+                    <div class="datepicker__wrapper" style="z-index: 9999; position: absolute; display: none;"></div>
+                  </div>
+                  <img class="header-form__icon" src="./img/icons/calendar.svg" alt="calendar">
+                </div>
+              </div>
+            </div>
+            <div class="header-form__submit">
+              <div class="train-select__header-form__item">
+                <button class="find-tickets right">Найти билеты</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumb breadcrumb-active"><a href="#"><span class="breadcrumb__number-list">1</span><span>Билеты</span></a></li>
+        <li class="breadcrumb breadcrumb-active"><a href="#"><span class="breadcrumb__number-list">2</span><span>Пассажиры</span></a></li>
+        <li class="breadcrumb"><a href="#"><span class="breadcrumb__number-list">3</span><span>Оплата</span></a></li>
+        <li class="breadcrumb"><a href="#"><span class="breadcrumb__number-list">4</span><span>Проверка</span></a></li>
+      </ul>
+    </div>
+  </header>
 
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumb breadcrumb-active"><a href="#"><span class="icon">1</span><span>Билеты</span></a></li>
-          <li class="breadcrumb"><a href="#"><span class="icon">2</span><span>Пассажиры</span></a></li>
-          <li class="breadcrumb"><a href="#"><span class="icon">3</span><span>Оплата</span></a></li>
-          <li class="breadcrumb"><a href="#"><span class="icon">4</span><span>Проверка</span></a></li>
-        </ul>
-      </div>
-     </header>
-
-
-      <main class="main-container">
-        <section class="sidebar-content">
-          <section class="travel-details">
-            <h2 class="travel-details-title">Детали поездки</h2>
-            <div class="travel-details-departure">
-              <div class="travel-details_title-container">
-                <h2 class="travel-details-main_title">
+  <main class="main-container">
+    <section class="sidebar-content">
+      <section class="travel-details">
+        <h2 class="travel-details-title">Детали поездки</h2>
+        <div class="travel-details-departure">
+          <div class="travel-details_title-container">
+            <h2 class="travel-details-main_title">
                   <span class="departure-vector"></span>Туда<span
                     class="travel-details-date"
                     >30.08.2018</span
                   >
                 </h2>
-                <span class="closeUP-vector"></span>
+            <span class="closeUP-vector"></span>
+          </div>
+          <p class="sidebar-train-number">
+            <span class="sidebar-train-number-title">№ Поезда</span>116C
+          </p>
+          <div class="sidebar-train-name">
+            <span class="sidebar-train-name-title">Название</span>
+            <ul class="sidebar-train-name-list">
+              <li>Адлер</li>
+              <li>Санкт-Петербург</li>
+            </ul>
+          </div>
+          <div class="sidebar-train-shipment-scheme">
+            <div class="sidebar-train-time-wrap">
+              <div class="sidebar-train-shipment-scheme_departure-date">
+                <span class="sidebar-train-departure-time">0:10</span>
+                <span class="travel-details_departure-day">30.08.2018</span>
               </div>
-              <p class="sidebar-train-number">
-                <span class="sidebar-train-number-title">№ Поезда</span>116C
-              </p>
-              <div class="sidebar-train-name">
-                <span class="sidebar-train-name-title">Название</span>
-                <ul class="sidebar-train-name-list">
-                  <li>Адлер</li>
-                  <li>Санкт-Петербург</li>
-                </ul>
+              <div class="travel-time-wrap">
+                <span class="travel-time">9:42</span>
+                <span class="travel-time-vector"></span>
               </div>
-              <div class="sidebar-train-shipment-scheme">
-                <div class="sidebar-train-time-wrap">
-                  <div class="sidebar-train-shipment-scheme_departure-date">
-                    <span class="sidebar-train-departure-time">0:10</span>
-                    <span class="travel-details_departure-day">30.08.2018</span>
-                  </div>
-                  <div class="travel-time-wrap">
-                    <span class="travel-time">9:42</span>
-                    <span class="travel-time-vector"></span>
-                  </div>
-                  <div class="sidebar-train-shipment-scheme_arrival-date">
-                    <span class="sidebar-train-departure-time">9:52</span>
-                    <span class="travel-details_arrival-day">31.08.2018</span>
-                  </div>
-                </div>
-                <div class="sidebar-train-departure-wrap">
-                  <div class="sidebar-departure-point-wrap">
-                    <span class="sidebar-train-departure-point">Москва</span>
-                    <span class="sidebar-train-departure-station"
-                      >Курский вокзал</span
+              <div class="sidebar-train-shipment-scheme_arrival-date">
+                <span class="sidebar-train-departure-time">9:52</span>
+                <span class="travel-details_arrival-day">31.08.2018</span>
+              </div>
+            </div>
+            <div class="sidebar-train-departure-wrap">
+              <div class="sidebar-departure-point-wrap">
+                <span class="sidebar-train-departure-point">Москва</span>
+                <span class="sidebar-train-departure-station">Курский вокзал</span
                     >
                   </div>
                   <div class="arrival-point-wrap">
@@ -152,9 +147,7 @@
             <div class="travel-details-departure_back">
               <div class="travel-details_title-container">
                 <h2 class="travel-details-main_title">
-                  <span class="departure-vector"></span>Обратно<span
-                    class="travel-details-date"
-                    >09.09.2018</span
+                  <span class="departure-vector"></span>Обратно<span class="travel-details-date">09.09.2018</span
                   >
                 </h2>
                 <span class="closeUP-vector"></span>
@@ -187,8 +180,7 @@
                 <div class="sidebar-train-departure-wrap">
                   <div class="departure-point-wrap">
                     <span class="sidebar-train-departure-point">Москва</span>
-                    <span class="sidebar-train-departure-station"
-                      >Курский вокзал</span
+                    <span class="sidebar-train-departure-station">Курский вокзал</span
                     >
                   </div>
                   <div class="arrival-point-wrap">
@@ -206,154 +198,154 @@
               <div class="travel-details_title-container">
                 <h2 class="travel-details-main_title">
                   <span class="passenger-vector"></span>Пассажиры
-                </h2>
-                <span class="closeUP-vector"></span>
-              </div>
-              <div class="count-list-wrap">
-                <div class="passengers-count-total">
-                  <p>2 Взрослых</p>
-                  <p>1 Ребенок</p>
-                </div>
-                <div class="passengers-price-total">
-                  <p>5840<span class="rub-vector-small"></span></p>
-                  <p>1920<span class="rub-vector-small"></span></p>
-                </div>
-              </div>
-              <div class="total">
-                <p>Итог</p>
-                <span class="total-price"
-                  >7760<span class="rub-vector"></span
+                    </h2>
+                    <span class="closeUP-vector"></span>
+                  </div>
+                  <div class="count-list-wrap">
+                    <div class="passengers-count-total">
+                      <p>2 Взрослых</p>
+                      <p>1 Ребенок</p>
+                    </div>
+                    <div class="passengers-price-total">
+                      <p>5840<span class="rub-vector-small"></span></p>
+                      <p>1920<span class="rub-vector-small"></span></p>
+                    </div>
+                  </div>
+                  <div class="total">
+                    <p>Итог</p>
+                    <span class="total-price">7760<span class="rub-vector"></span
                 ></span>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <section class="pay-data_main-container">
-          <section class="pay-data">
-            <div class="pay-data-personal_header">
-              <h2 class="pay-data-title">Персональные данные</h2>
-            </div>
-
-            <div class="pay-data-form">
-              <div class="passenger-name-selector-container">
-                <div class="last-name-container">
-                  <h3 class="last-name_title">Фамилия</h3>
-                  <input type="text" />
+                  </div>
                 </div>
-                <div class="first-name-container">
-                  <h3 class="first-name_title">Имя</h3>
-                  <input type="text" />
-                </div>
-                <div class="middle-name-container">
-                  <h3 class="middle-name_title">Отчество</h3>
-                  <input type="text" />
-                </div>
-              </div>
+      </section>
+    </section>
 
-              <div class="passenger-phoneAndEmail-selector-container">
-                <div class="phone-field">
-                  <h3 class="phone-title">Контактный телефон</h3>
-                  <input type="tel" />
-                </div>
-                <div class="email-field">
-                  <h3 class="email-title">E-mail</h3>
-                  <input type="email" />
-                </div>
-              </div>
+    <section class="pay-data_main-container">
+      <section class="pay-data">
+        <div class="pay-data-personal_header">
+          <h2 class="pay-data-title">Персональные данные</h2>
+        </div>
+
+        <div class="pay-data-form">
+          <div class="passenger-name-selector-container">
+            <div class="last-name-container">
+              <h3 class="last-name_title">Фамилия</h3>
+              <input type="text" />
             </div>
-
-            <div class="pay-data-payType_header">
-              <h2 class="pay-data-title">Способ оплаты</h2>
+            <div class="first-name-container">
+              <h3 class="first-name_title">Имя</h3>
+              <input type="text" />
             </div>
-
-            <div class="pay-data-payType_form">
-              <div class="payType-checkbox-container">
-                <input class="payType-checkbox" id="box-1" type="checkbox" />
-                <label for="box-1">Онлайн</label>
-              </div>
-              <ul class="payType_list">
-                <li>Банковской картой</li>
-                <li>PayPal</li>
-                <li>Visa QIWI Wallet</li>
-              </ul>
-              <div class="payType-checkbox-container cash">
-                <input class="payType-checkbox" id="box-2" type="checkbox" />
-                <label for="box-2">Наличными</label>
-              </div>
+            <div class="middle-name-container">
+              <h3 class="middle-name_title">Отчество</h3>
+              <input type="text" />
             </div>
-          </section>
+          </div>
 
-          <button class="pay-button">Купить билеты</button>
-        </section>
-      </main>
+          <div class="passenger-phoneAndEmail-selector-container">
+            <div class="phone-field">
+              <h3 class="phone-title">Контактный телефон</h3>
+              <input type="tel" />
+            </div>
+            <div class="email-field">
+              <h3 class="email-title">E-mail</h3>
+              <input type="email" />
+            </div>
+          </div>
+        </div>
 
-     <footer class="footer">
-     <div class="footer-main">
-        <div class="footer-main__contacts">
-            <h3 class="footer-main_head">Свяжитесь с нами</h3>
-            <ul class="footer-main__contacts__items">
-                <li class="footer-main__contacts__item">
-                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-cell.svg" alt="">
-                    <span class="footer-main__contacts__item__desc">8 (800) 000 00 00</span>
-                </li>
-                <li class="footer-main__contacts__item">
-                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-mail.svg" alt="">
-                    <span class="footer-main__contacts__item__desc">inbox@mail.ru</span>
-                </li>
-                <li class="footer-main__contacts__item">
-                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-skype.svg" alt="">
-                    <span class="footer-main__contacts__item__desc">tu.train.tickets</span>
-                </li>
-                <li class="footer-main__contacts__item">
-                    <img class="footer-main__contacts__item__img" src="./img/icons/footer-geo.svg" alt="">
-                    <span class="footer-main__contacts__item__desc">г. Москва ул. Московская 27-35 555 555</span>
-                </li>
+        <div class="pay-data-payType_header">
+          <h2 class="pay-data-title">Способ оплаты</h2>
+        </div>
+
+        <div class="pay-data-payType_form">
+          <div class="payType-checkbox-container">
+            <input class="payType-checkbox" id="box-1" type="checkbox" />
+            <label for="box-1">Онлайн</label>
+          </div>
+          <ul class="payType_list">
+            <li>Банковской картой</li>
+            <li>PayPal</li>
+            <li>Visa QIWI Wallet</li>
+          </ul>
+          <div class="payType-checkbox-container cash">
+            <input class="payType-checkbox" id="box-2" type="checkbox" />
+            <label for="box-2">Наличными</label>
+          </div>
+        </div>
+      </section>
+
+      <button class="pay-button">Купить билеты</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-main__contacts">
+        <h3 class="footer-main_head">Свяжитесь с нами</h3>
+        <ul class="footer-main__contacts__items">
+          <li class="footer-main__contacts__item">
+            <img class="footer-main__contacts__item__img" src="./img/icons/footer-cell.svg" alt="">
+            <span class="footer-main__contacts__item__desc">8 (800) 000 00 00</span>
+          </li>
+          <li class="footer-main__contacts__item">
+            <img class="footer-main__contacts__item__img" src="./img/icons/footer-mail.svg" alt="">
+            <span class="footer-main__contacts__item__desc">inbox@mail.ru</span>
+          </li>
+          <li class="footer-main__contacts__item">
+            <img class="footer-main__contacts__item__img" src="./img/icons/footer-skype.svg" alt="">
+            <span class="footer-main__contacts__item__desc">tu.train.tickets</span>
+          </li>
+          <li class="footer-main__contacts__item">
+            <img class="footer-main__contacts__item__img" src="./img/icons/footer-geo.svg" alt="">
+            <span class="footer-main__contacts__item__desc">г. Москва ул. Московская 27-35 555 555</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-main__subscribe">
+        <h3 class="footer-main_head">Подписка</h3>
+        <div class="footer-main__subscribe__item">
+          <form action="footer-main__subscribe__form" id="subscribe__form" method="post">
+            <label class="footer-main__subscribe__item__label" for="subscribe__form">Будьте в курсе событий</label>
+            <div class="input-btn-wrapper">
+              <input type="email" class="footer-main__subscribe__form-input" placeholder="e-mail">
+              <button class="footer-main__subscribe__send btn-footer">ОТПРАВИТЬ</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer-main__subscribe__item">
+          <span class="footer-main__subscribe__social-media">Подписывайтесь на нас</span>
+          <div class="footer-main__subscribe__social-media-list">
+            <ul class="social-media-list">
+              <li class="social-media-list__item">
+                <img src="./img/icons/footer-youtube.svg" alt="youtube-icon" class="symbol-active">
+              </li>
+              <li class="social-media-list__item">
+                <img src="./img/icons/footer-facebook.svg" alt="facebook-icon" class="symbol-active">
+              </li>
+              <li class="social-media-list__item">
+                <img src="./img/icons/footer-twitter.svg" alt="twitter-icon" class="symbol-active">
+              </li>
+              <li class="social-media-list__item">
+                <img src="./img/icons/footer-linkedin.svg" alt="linkedin-icon" class="symbol-active">
+              </li>
+              <li class="social-media-list__item">
+                <img src="./img/icons/footer-google.svg" alt="google-icon" class="symbol-active">
+              </li>
             </ul>
+          </div>
         </div>
-        <div class="footer-main__subscribe">
-            <h3 class="footer-main_head">Подписка</h3>
-            <div class="footer-main__subscribe__item">
-            <form action="footer-main__subscribe__form" id="subscribe__form" method="post">
-                <label class="footer-main__subscribe__item__label" for="subscribe__form">Будьте в курсе событий</label>
-                <div class="input-btn-wrapper">
-                <input type="email" class="footer-main__subscribe__form-input" placeholder="e-mail">
-               <button class="footer-main__subscribe__send btn-footer">ОТПРАВИТЬ</button>
-               </div>
-            </form>
-            </div>
-            <div class="footer-main__subscribe__item">
-            <span class="footer-main__subscribe__social-media">Подписывайтесь на нас</span>
-            <div class="footer-main__subscribe__social-media-list">
-                <ul class="social-media-list">
-                    <li class="social-media-list__item">
-                        <img src="./img/icons/footer-youtube.svg" alt="youtube-icon" class="symbol-active">                    
-                    </li>
-                    <li class="social-media-list__item">
-                        <img src="./img/icons/footer-facebook.svg" alt="facebook-icon" class="symbol-active">
-                    </li>
-                    <li class="social-media-list__item">
-                        <img src="./img/icons/footer-twitter.svg" alt="twitter-icon" class="symbol-active">
-                    </li>
-                    <li class="social-media-list__item">
-                        <img src="./img/icons/footer-linkedin.svg" alt="linkedin-icon" class="symbol-active">
-                    </li>
-                    <li class="social-media-list__item">
-                        <img src="./img/icons/footer-google.svg" alt="google-icon" class="symbol-active">
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </div>
-     </div>
+      </div>
+    </div>
 
-     <div class="footer-main__line"></div>
+    <div class="footer-main__line"></div>
 
-     <div class="footer-logo container">
-        <div class="footer__logo__logo">Лого</div>
-        <div class="logo-up"><img src="./img/icons/footer-ellipse.svg" alt="button-UP" class="symbol-active"></div>
-        <div class="copyright">2018 WEB</div>
-     </div>
-    </footer>
+    <div class="footer-logo container">
+      <div class="footer__logo__logo">Лого</div>
+      <div class="logo-up"><img src="./img/icons/footer-ellipse.svg" alt="button-UP" class="symbol-active"></div>
+      <div class="copyright">2018 WEB</div>
+    </div>
+  </footer>
 </body>
+
 </html>

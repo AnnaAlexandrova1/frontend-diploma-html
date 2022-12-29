@@ -1,23 +1,22 @@
-.orderEnd__header{
+.header-orderEnd{
     background-image: url('../img/orderEnd.png');
-    box-sizing: border-box;
-    min-height: 150px;
+    background-color: #292929;
+    background-position: 0 82%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
 }
 
-.trainSelect_header {
-  background-image: url(../Pictures/OrderEnd_header-background.png);
-  background-position: 0 82%;
-}
-
-.order-end_main-container {
-  background: #e5e5e5;
+.header-orderEnd__thanks h1{
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 84px;
+  margin-top: 350px;
 }
 
 .order-end_content-wrap {
   position: relative;
-  left: 258px;
-  top: -300px;
-  width: 1404px;
+  top: -188px;
 }
 
 .order-end_content-wrap h1,
@@ -65,6 +64,7 @@
 .order-end_order-number {
   font-weight: bold;
   font-size: 36px;
+  color:#3E3C41;
   line-height: 42px;
   margin: auto 82px;
 }
@@ -79,8 +79,12 @@
 
 .order-end_total-price-sum {
   font-weight: bold;
+  color: #3E3C41;
   font-size: 36px;
   line-height: 42px;
+}
+.rub-vector {
+  margin-left: 8px;
 }
 
 .order-end_faq {
@@ -113,15 +117,15 @@
 }
 
 .first {
-  background: url(../Pictures/icons/css_sprites.png) -222px -222px;
+  background: url(../img/icons/css_sprites.png) -222px -222px;
 }
 
 .second {
-  background: url(../Pictures/icons/css_sprites.png) -424px -215px;
+  background: url(../img/icons/css_sprites.png) -424px -215px;
 }
 
 .last {
-  background: url(../Pictures/icons/css_sprites.png) -424px -20px;
+  background: url(../img/icons/css_sprites.png) -424px -20px;
 }
 
 .order-end_message {
@@ -186,20 +190,16 @@
   width: 46px;
   height: 44px;
   margin-left: 30px;
-  background: url(../Pictures/icons/css_sprites.png) -619px -290px;
 }
 
-.star-vector:hover {
-  background: url(../Pictures/icons/css_sprites.png) -254px -424px;
+.star-vector:hover path {
+  fill:#f4f3f6;
 }
 
-.star-vector .active {
-  background: url(../Pictures/icons/css_sprites.png) -254px -424px;
+.star-vector .active path {
+  background: url(../img/icons/css_sprites.png) -254px -424px;
 }
 
-.star-vector .inactive {
-  background: url(../Pictures/icons/css_sprites.png) -351px -424px;
-}
 
 .back-to-main {
   width: 323px;
